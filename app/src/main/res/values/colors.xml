@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorYellow">#ff6600</color>
+    <color name="colorBlack">#000000</color>
+    <color name="tv_login_forgetpwd_false">#0066FF</color>
+    <color name="tv_login_forgetpwd_true">#0033FF</color>
+    <color name="ll_userinfo_item_true">#E6E6E6</color>
+    <color name="ll_userinfo_item_false">#FFFFFF</color>
+    <color name="tv_mian_tab_default">#000</color>
+    <color name="tv_mian_tab_checked">#ff6600</color>
+    <color name="rb_myredpag_select_true">#FFFFFF</color>
+    <color name="rb_myredpag_select_false">#1A1A1A</color>
+    <color name="rb_myredpag_check_true">#ff6600</color>
+    <color name="rb_myredpag_check_false">#fff</color>
+    <color name="rb_borrow_text_true">#ff6600</color>
+    <color name="rb_borrow_text_false">#1A1A1A</color>
+    <color name="ll_repayplan_true">#FD2207</color>
+    <color name="ll_repayplan_false">#FD5E24</color>
+</resources>

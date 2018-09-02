@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFF"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_billdetail_item_money"
+        android:text="+123"
+        android:textSize="18sp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_billdetail_item_title"
+        android:text="转入上海清算中心"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@id/tv_billdetail_item_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_billdetail_item_time"
+        android:text="04.29"
+        android:layout_below="@id/tv_billdetail_item_title"
+        android:layout_alignLeft="@id/tv_billdetail_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_billdetail_item_type"
+        android:text="还款"
+        android:layout_toRightOf="@id/tv_billdetail_item_time"
+        android:layout_alignTop="@id/tv_billdetail_item_time"
+        android:layout_alignBottom="@id/tv_billdetail_item_time"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

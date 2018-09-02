@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@mipmap/myredpag_item_bg"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_myredpac_borrow_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XX宝新手福利"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/tv_myredpac_borrow_duetotime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_myredpac_borrow_title"
+        android:layout_below="@id/tv_myredpac_borrow_title"
+        android:layout_marginTop="5dp"
+        android:text="2018-06-25 到期" />
+
+    <TextView
+        android:id="@+id/tv_myredpac_borrow_moneylimit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_myredpac_borrow_title"
+        android:layout_below="@id/tv_myredpac_borrow_duetotime"
+        android:layout_marginTop="15dp"
+        android:text="借款金额≥3000元可用" />
+
+    <TextView
+        android:id="@+id/tv_myredpac_borrow_timelimit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_myredpac_borrow_title"
+        android:layout_below="@id/tv_myredpac_borrow_moneylimit"
+        android:layout_marginTop="5dp"
+        android:text="借款期限≥3期可用" />
+
+    <LinearLayout
+        android:id="@+id/ll_myredpac_borrow_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_alignTop="@id/tv_myredpac_borrow_title"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_myredpac_borrow_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textColor="#FFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="元"
+            android:textColor="#FFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_myredpac_borrow_cashred"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@id/ll_myredpac_borrow_money"
+        android:layout_below="@id/ll_myredpac_borrow_money"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:background="@mipmap/borrownouseredpag_item_icon"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="抵扣券"
+            android:textColor="#FFF" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_myredpac_borrow_usenow"
+        android:background="@drawable/tv_noredpac_use"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/ll_myredpac_borrow_cashred"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="立即使用"
+            android:textColor="#FFF" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#FFF"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:text="已还金额："
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/et_mycarddetailflag_money"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:textSize="15sp"
+            android:maxLines="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv_mycarddetailflag_complete"
+            android:text="完成"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <View
+        android:background="#e6e6e6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <view.CustomNumKeyView
+        android:id="@+id/mycarddetail_flag"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+</LinearLayout>

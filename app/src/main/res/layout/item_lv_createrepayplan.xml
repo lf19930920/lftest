@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:background="#FFF"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_createrepayplan_item_text"
+        android:text="额度不低于：¥"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_createrepayplan_item_limit"
+        android:text="285.00"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/tv_createrepayplan_item_text"
+        android:layout_alignBottom="@id/tv_createrepayplan_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_createrepayplan_item_poundagetext"
+        android:text="总手续费：¥"
+        android:textSize="13sp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/tv_createrepayplan_item_text"
+        android:layout_alignLeft="@id/tv_createrepayplan_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_createrepayplan_item_poundage"
+        android:text="52.33"
+        android:textSize="13sp"
+        android:layout_toRightOf="@id/tv_createrepayplan_item_poundagetext"
+        android:layout_alignBottom="@id/tv_createrepayplan_item_poundagetext"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/iv_createrepayplan_item_check"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+    <TextView
+        android:id="@+id/tv_createrepayplan_item_time"
+        android:text="1次还完"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/iv_createrepayplan_item_check"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

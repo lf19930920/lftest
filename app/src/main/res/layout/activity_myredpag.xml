@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <LinearLayout
+            android:id="@+id/ll_myredpac_back"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:background="@mipmap/app_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:text="我的红包"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:background="#e6e6e6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:id="@+id/rg_myredpag"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="240dp"
+            android:layout_height="40dp">
+            <RadioButton
+                android:id="@+id/rb_myredpag_repay"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="还款金"
+                android:gravity="center"
+                android:background="@drawable/rb_redpag_repay_bg"
+                android:textColor="@drawable/rb_myredpag_tv_bg"
+                android:layout_height="match_parent" />
+            <RadioButton
+                android:id="@+id/rb_myredpag_invest"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="投资券"
+                android:gravity="center"
+                android:background="@drawable/rb_redpag_invest_bg"
+                android:textColor="@drawable/rb_myredpag_tv_bg"
+                android:layout_height="match_parent" />
+            <RadioButton
+                android:id="@+id/rb_myredpag_borrow"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="借款券"
+                android:background="@drawable/rb_redpag_borrow_bg"
+                android:gravity="center"
+                android:textColor="@drawable/rb_myredpag_tv_bg"
+                android:layout_height="match_parent" />
+        </RadioGroup>
+        <com.youth.banner.Banner
+            android:id="@+id/banner_myredpag"
+            android:background="#ff9999"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/fl_myredpag_container"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:layout_height="0dp"/>
+
+</LinearLayout>

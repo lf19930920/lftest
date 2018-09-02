@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@mipmap/noredpag_item_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_borrownouseredpag_title"
+        android:text="XX宝新手福利"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_borrownouseredpag_duetotime"
+        android:text="2018-06-25 到期"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/tv_borrownouseredpag_title"
+        android:layout_alignLeft="@id/tv_borrownouseredpag_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_borrownouseredpag_moneylimit"
+        android:text="借款金额≥3000元可用"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/tv_borrownouseredpag_duetotime"
+        android:layout_alignLeft="@id/tv_borrownouseredpag_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_borrownouseredpag_timelimit"
+        android:text="借款期限≥3期可用"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/tv_borrownouseredpag_moneylimit"
+        android:layout_alignLeft="@id/tv_borrownouseredpag_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/ll_borrownouseredpag_money"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:layout_marginRight="15dp"
+        android:layout_alignTop="@id/tv_borrownouseredpag_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_borrownouseredpag_money"
+            android:textColor="#FFF"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#FFF"
+            android:text="元"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_borrownouseredpag_cashred"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/ll_borrownouseredpag_money"
+        android:layout_alignRight="@id/ll_borrownouseredpag_money"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/borrownouseredpag_item_icon"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+        <TextView
+            android:id="@+id/tv_borrownouseredpag_typename"
+            android:text="抵扣券"
+            android:textColor="#FFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/tv_noredpac_use"
+        android:padding="5dp"
+        android:layout_below="@id/ll_borrownouseredpag_cashred"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_borrownouseredpag_usenow"
+            android:text="立即使用"
+            android:textColor="#FFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_borrownouseredpag_state"
+        android:background="@mipmap/noredpag_overdue"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@id/tv_borrownouseredpag_moneylimit"
+        android:layout_alignTop="@id/tv_borrownouseredpag_duetotime"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+</RelativeLayout>

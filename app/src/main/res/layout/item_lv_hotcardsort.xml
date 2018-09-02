@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFF"
+    android:padding="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iv_allcreditcard_icon"
+        android:layout_centerVertical="true"
+        android:background="@mipmap/zsyh"
+        android:layout_width="100dp"
+        android:layout_height="70dp" />
+    <ImageView
+        android:id="@+id/iv_allcreditcard_sort"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+    <TextView
+        android:id="@+id/tv_allcreditcard_title"
+        android:text="招商银行信用卡"
+        android:textColor="#000"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignTop="@id/iv_allcreditcard_icon"
+        android:layout_toRightOf="@id/iv_allcreditcard_icon"
+        android:layout_toLeftOf="@id/iv_allcreditcard_sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_allcreditcard_gift"
+        android:text="送899元拉杆箱"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/iv_allcreditcard_icon"
+        android:layout_below="@id/tv_allcreditcard_title"
+        android:layout_alignLeft="@id/tv_allcreditcard_title"
+        android:layout_toLeftOf="@id/iv_allcreditcard_sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_allcreditcard_desc"
+        android:text="百分百取现，免手续费"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@id/iv_allcreditcard_icon"
+        android:layout_alignLeft="@id/tv_allcreditcard_title"
+        android:layout_toLeftOf="@id/iv_allcreditcard_sort"
+        android:layout_below="@id/tv_allcreditcard_gift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

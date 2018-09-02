@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:padding="10dp"
+        android:background="@mipmap/myredpag_item_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_myredpac_repay_newvip"
+            android:text="新人有礼"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_myredpac_repay_duetotime"
+            android:text="2018-06-01 到期"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/tv_myredpac_repay_newvip"
+            android:layout_alignLeft="@id/tv_myredpac_repay_newvip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_myredpac_repay_limit"
+            android:text="仅限用于信用卡还款"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tv_myredpac_repay_duetotime"
+            android:layout_alignLeft="@id/tv_myredpac_repay_newvip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_myredpac_repay_support"
+            android:text="支持储蓄卡、支付宝、微信还款"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/tv_myredpac_repay_limit"
+            android:layout_alignLeft="@id/tv_myredpac_repay_newvip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_alignBottom="@id/tv_myredpac_repay_duetotime"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_myredpac_repay_money"
+                android:textColor="#FFF"
+                android:text="5"
+                android:textSize="25sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_myredpac_repay_moneytext"
+                android:text="元"
+                android:textColor="#FFF"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_myredpac_repay_usenow"
+            android:text="立即使用"
+            android:textColor="#FFF"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/tv_myredpac_repay_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

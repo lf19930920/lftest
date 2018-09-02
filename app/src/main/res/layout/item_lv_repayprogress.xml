@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:background="#FFF"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_repayprogress_moneytext"
+        android:text="¥"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_repayprogress_money"
+        android:layout_toRightOf="@id/tv_repayprogress_moneytext"
+        android:text="971.00"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:textColor="#333"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_repayprogress_desc"
+        android:text="第1次还款"
+        android:textSize="14sp"
+        android:layout_below="@id/tv_repayprogress_moneytext"
+        android:layout_alignLeft="@id/tv_repayprogress_moneytext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_repayprogress_progress"
+        android:text="已完成"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_repayprogress_time"
+        android:text="05-26 13:40"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/tv_repayprogress_progress"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

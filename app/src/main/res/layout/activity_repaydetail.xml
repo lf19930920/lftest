@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <LinearLayout
+            android:id="@+id/ll_callus_back"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:background="@mipmap/app_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:text="还款详情"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:background="#e6e6e6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:gravity="center"
+        android:background="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:background="@mipmap/paydetail_complete"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="#FFF"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center|center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="¥"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_repaydetail_money"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:text="21.00"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_repaydetail_progress"
+            android:text="还款成功"
+            android:textColor="#0066FF"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="#e6e6e6"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_repaydetail_saledetail"
+                android:background="@mipmap/repaydetail_sale"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_repaydetail_repaymoney"
+                android:text="20.00"
+                android:textColor="#ff9933"
+                android:textSize="16sp"
+                android:layout_alignBottom="@id/iv_repaydetail_saledetail"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_repaydetail_repaymoney_text"
+                android:text="¥"
+                android:textSize="14sp"
+                android:textColor="#ff9933"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@id/tv_repaydetail_repaymoney"
+                android:layout_alignBottom="@id/tv_repaydetail_repaymoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_toLeftOf="@id/tv_repaydetail_repaymoney_text"
+                android:text="还款金："
+                android:textColor="#ff9933"
+                android:textSize="16sp"
+                android:layout_marginRight="5dp"
+                android:layout_alignBottom="@id/tv_repaydetail_repaymoney_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="付款信息"
+                android:layout_marginLeft="15dp"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_repaydetail_repaymessage"
+                android:text="农业银行(6775):1.00"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_repaydetail_cardtype"
+                android:text="信用卡"
+                android:layout_marginLeft="15dp"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_repaydetail_carddetail"
+                android:text="农业银行(7042)张三"
+                android:textSize="16sp"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@id/tv_repaydetail_cardtype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:layout_marginTop="15dp"
+            android:background="#e6e6e6"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+            <TextView
+                android:id="@+id/tv_repaydetail_progresstext"
+                android:text="还款进度"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/iv_repaydetail_commit"
+                android:layout_centerHorizontal="true"
+                android:layout_alignBottom="@id/tv_repaydetail_progresstext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_repaydetail_commit"
+                android:text="提交成功"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/iv_repaydetail_commit"
+                android:layout_alignBottom="@id/iv_repaydetail_commit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_repaydetail_commit_time"
+                android:text="05-14 14:41"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_alignBottom="@id/tv_repaydetail_commit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:id="@+id/ll_repaydetail_one"
+                android:orientation="horizontal"
+                android:layout_below="@id/iv_repaydetail_commit"
+                android:layout_centerHorizontal="true"
+                android:background="#0066FF"
+                android:layout_width="1dp"
+                android:layout_height="40dp">
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/iv_repaydetail_bankdeal"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/ll_repaydetail_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_repaydetail_bankdeal"
+                android:text="银行处理中"
+                android:layout_toRightOf="@id/iv_repaydetail_bankdeal"
+                android:layout_alignBottom="@id/iv_repaydetail_bankdeal"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_repaydetail_bankdealtime"
+                android:text="05-14 14:42"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@id/iv_repaydetail_bankdeal"
+                android:layout_marginRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:id="@+id/ll_repaydetail_two"
+                android:orientation="vertical"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/iv_repaydetail_bankdeal"
+                android:background="#0066FF"
+                android:layout_width="1dp"
+                android:layout_height="40dp">
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/iv_repaydetail_success"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/ll_repaydetail_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_repaydetail_success"
+                android:text="还款成功"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/iv_repaydetail_success"
+                android:layout_alignBottom="@id/iv_repaydetail_success"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_repaydetail_successtime"
+                android:text="05-14 14:43"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_alignBottom="@id/iv_repaydetail_success"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFF"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:padding="10dp"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_repayplan_totaltext"
+        android:text="还款总额："
+        android:textSize="16sp"
+        android:textColor="#333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_repayplan_total"
+        android:text="¥ 2580.00"
+        android:layout_toRightOf="@id/tv_repayplan_totaltext"
+        android:textSize="16sp"
+        android:textColor="#333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_repayplan_poundage"
+        android:text="¥ 235.25"
+        android:textSize="14sp"
+        android:textColor="#333"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_repayplan_poundagetext"
+        android:layout_toLeftOf="@id/tv_repayplan_poundage"
+        android:text="总手续费："
+        android:textSize="14sp"
+        android:textColor="#333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

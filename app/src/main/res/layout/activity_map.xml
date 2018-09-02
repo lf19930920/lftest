@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <LinearLayout
+            android:id="@+id/ll_map_back"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:background="@mipmap/app_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:text="百度地图"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:background="#e6e6e6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <RadioGroup
+        android:id="@+id/rg_map_tab"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <view.MyRadioButton
+            android:id="@+id/rb_map_map"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="地图"
+            android:background="@null"
+            android:drawableLeft="@drawable/rb_map_mapbg"
+            android:textColor="@drawable/tv_mian_tab_bg"
+            android:layout_height="match_parent" />
+        <View
+            android:background="#e6e6e6"
+            android:layout_width="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="match_parent"/>
+        <view.MyRadioButton
+            android:id="@+id/rb_map_list"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="列表"
+            android:background="@null"
+            android:drawableLeft="@drawable/rb_map_listbg"
+            android:textColor="@drawable/tv_mian_tab_bg"
+            android:layout_height="match_parent" />
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ll_map_linemap"
+            android:layout_width="0dp"
+            android:background="#ff6600"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_height="2dp">
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_map_linelist"
+            android:background="#ff6600"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="2dp">
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/fl_map_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

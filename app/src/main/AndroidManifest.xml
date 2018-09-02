@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xykgj.tx.xinyongkaguanjia">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--百度地图权限-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!--网络权限，当禁用后，无法进行检索等相关业务-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--读取设备硬件信息，统计数据-->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <!--读取系统信息，包含系统版本等信息，用作统计-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--获取设备的网络状态，鉴权所需网络代理-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!--允许sd卡写权限，需写入地图数据，禁用后无法显示地图-->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!--获取统计数据-->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!--鉴权所需该权限获取进程列表-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:name="myapp.MyApplication"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="activity.MainActivity"
+            android:launchMode="standard" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--登陆-->
+        <activity android:name="activity.LoginActivity"
+            >
+
+        </activity>
+        <!--注册-->
+        <activity android:name="activity.RegisterActivity"/>
+        <!--忘记密码-->
+        <activity android:name="activity.ResetPWDActivity">
+
+        </activity>
+        <!--修改密码-->
+        <activity android:name="activity.EditPWDActivity">
+
+        </activity>
+        <!--设置-->
+        <activity android:name="activity.SettingActivity"/>
+        <!--联系我们-->
+        <activity android:name="activity.CallUsActivity"/>
+        <!--添加银行卡-->
+        <activity android:name="activity.AddBankCardActivity"/>
+        <!--还款金不可用红包-->
+        <activity android:name="activity.NoUseRedPagActivity">
+
+        </activity>
+        <!--实名认证-->
+        <activity android:name="activity.RealNameAuthActivity"/>
+        <!--已实名认证-->
+        <activity android:name="activity.HasRealNameActivity"/>
+        <!--补全信用卡信息-->
+        <activity android:name="activity.CompletCardActivity">
+
+        </activity>
+        <!--活动中心-->
+        <activity android:name="activity.ActivitCenterActivity"/>
+        <!--系统通知-->
+        <activity android:name="activity.SystemNotifiActivity"/>
+        <!--贷款列表-->
+        <activity android:name="activity.LoanListActivity"/>
+        <!--消息中心-->
+        <activity android:name="activity.MSGCenterActivity"/>
+        <!--信用卡申请-->
+        <activity android:name="activity.CreditApplyActivity"/>
+        <!--还款详情-->
+        <activity android:name="activity.PaymentDetailActivity"/>
+        <!--消息详情-->
+        <activity android:name="activity.MsgDetailActivity"
+            android:excludeFromRecents="true"/>
+        <!--公告-->
+        <activity android:name="activity.NoticeActivity"/>
+        <!--全部信用卡-->
+        <activity android:name="activity.AllCreditCardActivity"/>
+        <!--我的红包-->
+        <activity android:name="activity.MyRedPagActivity"/>
+        <!--我的信用卡详情-->
+        <activity android:name="activity.MyCardDetailActivity"/>
+        <!--还款详情-->
+        <activity android:name="activity.RepayDetailActivity"/>
+        <!--联系银行-->
+        <activity android:name="activity.CallBankActivity"/>
+        <!--银行网点-->
+        <activity android:name="activity.MapActivity"/>
+        <!--选择邮箱-->
+        <activity android:name="activity.ChooseMailActivity"/>
+        <!--选择网银-->
+        <activity android:name="activity.ChooseEBankActivity"/>
+        <!--导入账单-->
+        <activity android:name="activity.InputBillActivity"/>
+        <!--确认还款Dialog-->
+        <activity android:name="activity.DialogChooseActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/dialogstyle"/>
+        <!--选择城市-->
+        <activity android:name="activity.CityChooseActivity"/>
+        <!--卡片编辑-->
+        <activity android:name="activity.CardEditActivity">
+
+        </activity>
+        <!--创建还款计划-->
+        <activity android:name="activity.CreateRepayPlanActivity"/>
+        <!--还款计划-->
+        <activity android:name="activity.RepayPlanActivity"/>
+        <!--还款进度-->
+        <activity android:name="activity.RepayProgressActivity"/>
+        <!--百度地图key-->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="aYgKKna9bnczd5BHOhcIoEnMcHMUVIf9" />
+    </application>
+</manifest>

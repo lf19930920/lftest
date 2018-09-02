@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_repayhistroy_child_title"
+        android:text="还款成功"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_repayhistroy_child_time"
+        android:layout_below="@id/tv_repayhistroy_child_title"
+        android:layout_alignLeft="@id/tv_repayhistroy_child_title"
+        android:textSize="12sp"
+        android:text="2018-06-17 13:36:42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_repayhistroy_child_money"
+        android:text="+5200.00"
+        android:textColor="#333"
+        android:textSize="16sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/tv_repayhistroy_child_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_repayhistroy_child_type"
+        android:text="储蓄卡"
+        android:textSize="12sp"
+        android:layout_alignRight="@id/tv_repayhistroy_child_money"
+        android:layout_below="@id/tv_repayhistroy_child_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

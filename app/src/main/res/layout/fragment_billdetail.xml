@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="#FFF"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_billdetail_inputebank"
+            android:text="导入网银"
+            android:textColor="#FF6600"
+            android:background="@drawable/btn_allcredit_bg"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+        <TextView
+            android:id="@+id/tv_billdetail_notoutbill"
+            android:text="未出账单"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_billdetail_notoutbilltime"
+            android:text="05.08-06.07"
+            android:layout_alignLeft="@id/tv_billdetail_notoutbill"
+            android:layout_below="@id/tv_billdetail_notoutbill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <ExpandableListView
+        android:id="@+id/ex_lv_billdetail"
+        android:groupIndicator="@null"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

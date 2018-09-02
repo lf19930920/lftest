@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:background="#FFF"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_bankmaplist_title"
+        android:text="中国农业银行ATM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_bankmaplist_location"
+        android:text="浙江省杭州市西湖区蒋村花园"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/tv_bankmaplist_title"
+        android:layout_alignLeft="@id/tv_bankmaplist_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/iv_bankmaplist_arrow"
+        android:background="@mipmap/carddetail_arrow_right"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_bankmaplist_distance"
+        android:layout_toLeftOf="@id/iv_bankmaplist_arrow"
+        android:text="1.4"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

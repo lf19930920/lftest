@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@mipmap/noredpag_item_bg"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_repaynoredpac_newgift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新人有礼"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_repaynoredpac_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_repaynoredpac_newgift"
+        android:layout_below="@id/tv_repaynoredpac_newgift"
+        android:layout_marginTop="5dp"
+        android:text="2018-08-23  到期"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_repaynoredpac_limit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_repaynoredpac_newgift"
+        android:layout_below="@id/tv_repaynoredpac_date"
+        android:layout_marginTop="15dp"
+        android:text="仅限用于信用卡还款"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_repaynoredpac_refund"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_repaynoredpac_newgift"
+        android:layout_below="@id/tv_repaynoredpac_limit"
+        android:layout_marginTop="5dp"
+        android:text="支持储蓄卡、支付宝、微信还款"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_repaynoredpac_moneytext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#FFF"
+        android:text="元"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_repaynoredpac_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:layout_toLeftOf="@id/tv_repaynoredpac_moneytext"
+        android:text="5"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+        android:background="@drawable/tv_noredpac_use"
+        android:layout_alignTop="@id/tv_repaynoredpac_refund"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_repaynoredpac_beused"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="立即使用"
+            android:textColor="#FFF"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_repaynoredpac_state"
+        android:background="@mipmap/noredpag_used"
+        android:layout_toRightOf="@id/tv_repaynoredpac_limit"
+        android:layout_alignBottom="@id/tv_repaynoredpac_limit"
+        android:layout_marginLeft="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+</RelativeLayout>

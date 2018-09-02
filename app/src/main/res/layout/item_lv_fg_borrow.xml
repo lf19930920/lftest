@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="#FFF"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iv_borrow_item_icon"
+        android:layout_centerVertical="true"
+        android:background="@mipmap/borrow_list_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+    <TextView
+        android:id="@+id/tv_borrow_item_title"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:text="百度有钱花-大额度"
+        android:layout_alignTop="@id/iv_borrow_item_icon"
+        android:layout_toRightOf="@id/iv_borrow_item_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/iv_borrow_item_special"
+        android:layout_marginLeft="10dp"
+        android:background="@mipmap/borrow_list_special_quick"
+        android:layout_alignTop="@id/tv_borrow_item_title"
+        android:layout_toRightOf="@id/tv_borrow_item_title"
+        android:layout_marginTop="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_borrow_item_limit"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#FF3030"
+        android:text="500-20000元"
+        android:layout_toRightOf="@id/iv_borrow_item_icon"
+        android:layout_below="@id/tv_borrow_item_title"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="借款额度"
+        android:textColor="#BDBDBD"
+        android:textSize="14sp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/iv_borrow_item_icon"
+        android:layout_below="@id/tv_borrow_item_limit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
