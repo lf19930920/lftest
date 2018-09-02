@@ -269,5 +269,6 @@ public class UserInfoFragment extends BaseFragment {
         mUnbinder.unbind();
         EventBus.getDefault().unregister(this);
         //Test
+        //Test
     }
 }
